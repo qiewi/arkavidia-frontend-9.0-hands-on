@@ -1,26 +1,25 @@
-# How to Run
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)
+![Static Badge](https://img.shields.io/badge/Release-1.0-blue)
+![Static Badge](https://img.shields.io/badge/Copyright-Qie-cyan)
 
-1. Fork repository ini
-   ![alt text](image.png)
+![Header] (https://github.com/user-attachments/assets/e0a6f021-1572-4df5-bdbd-e1327e548344)
 
-2. Pastikan Node.js sudah terinstall [[Link]](https://nodejs.org/en/download/package-manager)
+# **Hands-On Front End Arkavidia**  
+_______
 
-3. Pastikan pnpm sudah terinstall
+## Deskripsi
+_______
 
-```
-npm i -g pnpm
-```
+Latihan NextJS && TypeScript nge-recreate page competitive programming ARKAVIDIA 2022.
 
-4. Install library yang dibutuhkan dengan
 
-```
-pnpm install
-```
+## Preview
 
-5. Jalankan local development dengan
+![Screenshot 2024-11-30 211846](https://github.com/user-attachments/assets/88619e43-ce42-412b-bb45-115f728184ad)
 
-```
-pnpm dev
-```
+![Screenshot 2024-11-30 211901](https://github.com/user-attachments/assets/ebf11c88-c9e0-467d-a298-8f95ddf53657)
 
-6. Website dapat diakses pada localhost:3000
+![Screenshot 2024-11-30 211917](https://github.com/user-attachments/assets/fb6bdcdd-b131-4f15-a9e8-a9c254b118fd)
+
+![Screenshot 2024-11-30 211939](https://github.com/user-attachments/assets/edf87e4f-05fc-4516-91dd-215ff5e05a2a)
+
