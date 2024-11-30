@@ -77,6 +77,7 @@ const navItems: NavItem[] = [
 export default function Navbar() {
   const [animationParent] = useAutoAnimate();
   const [isSideMenuOpen, setSideMenue] = useState(false);
+  
   function openSideMenu() {
     setSideMenue(true);
   }
@@ -158,7 +159,7 @@ export default function Navbar() {
 
 function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   return (
-    <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden">
+    <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 ">
       <div className=" h-full w-[65%] bg-white px-4 py-4">
         <section className="flex justify-end">
           <AiOutlineClose
@@ -180,12 +181,8 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
         </div>
 
         <section className="  flex  flex-col   gap-8  mt-4 items-center">
-          <button className="h-fit text-neutral-400 transition-all hover:text-black/90">
-            Login
-          </button>
-
-          <button className="w-full  max-w-[200px]  rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90">
-            Register
+          <button className="w-full  max-w-[200px]  rounded-xl border-2 border-blue-900 px-4 py-2 text-blue-900 transition-all hover:bg-blue-900 hover:text-white">
+            Sign In | Sign Up
           </button>
         </section>
       </div>
@@ -208,7 +205,7 @@ function SingleNavItem(d: NavItem) {
       href={d.link ?? "#"}
       className="relative   px-2 py-3 transition-all "
     >
-      <p className="flex cursor-pointer items-center gap-2 text-neutral-400 group-hover:text-black ">
+      <p className="flex cursor-pointer items-center gap-2 text-blue-900 group-hover:text-black ">
         <span>{d.label}</span>
         {d.children && (
           // rotate-180
@@ -225,7 +222,7 @@ function SingleNavItem(d: NavItem) {
             <Link
               key={i}
               href={ch.link ?? "#"}
-              className=" flex cursor-pointer items-center  py-1 pl-6 pr-8  text-neutral-400 hover:text-black  "
+              className=" flex cursor-pointer items-center  py-1 pl-6 pr-8  text-blue-900 hover:bg-blue-900 hover:text-white "
             >
               {/* image */}
               {ch.iconImage && <Image src={ch.iconImage} alt="item-icon" />}
