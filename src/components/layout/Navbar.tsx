@@ -86,7 +86,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="mx-auto text-blue-900 font-archivo font-bold flex w-[80%] max-w-7xl justify-between px-16 py-5 text-md mt-4 border-2 border-black rounded-[60px]">
+    <div className="mx-auto top-0 left-1/2 transform -translate-x-1/2 z-50 fixed bg-white text-blue-900 font-archivo font-bold flex w-[80%] max-w-7xl justify-between px-16 py-5 text-md mt-4 border-2 border-black rounded-[60px]">
       {/* left side  */}
       <section ref={animationParent} className="flex items-center gap-10">
         {/* logo */}
@@ -125,7 +125,7 @@ export default function Navbar() {
                       <Link
                         key={i}
                         href={ch.link ?? "#"}
-                        className=" flex cursor-pointer items-center py-1 pl-2 pt-2 pr-8  text-blue-900 hover:text-white hover:bg-blue-900  "
+                        className=" flex cursor-pointer items-center py-3 pl-2 pr-8  text-blue-900 hover:text-white hover:bg-blue-900  "
                       >
                         {/* image */}
                         {ch.iconImage && (

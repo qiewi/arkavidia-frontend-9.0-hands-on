@@ -6,55 +6,42 @@ import { Button } from "../ui/button";
 
 export const PageHeader = () => {
   return (
-    <div className="relative w-full bg-yellow-400">
-      {/* Grid Background */}
-      <div
-        className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-repeat bg-[length:80px_80px]"
-        aria-hidden="true"
-      ></div>
-
-      {/* Decorative Elements */}
+    <section className="bg-[#f3b539] bg-[linear-gradient(90deg,_rgb(11,10,10)_2%,_transparent_1%),_linear-gradient(rgb(11,10,10)_2%,_transparent_1%)] bg-[length:80px_80px] w-full relative bg-yellow300 flex justify-center items-center flex-col pt-40 pb-20 overflow-hidden">
       <Image
         src={Star}
-        alt="Star Decoration"
-        className="absolute top-10 left-10 w-12 h-12"
+        alt="Star Background"
+        className="absolute top-40 left-4 max-lg:hidden"
       />
       <Image
         src={GamePad}
-        alt="Gamepad Decoration"
-        className="absolute bottom-10 right-10 w-20 h-20"
+        alt="Gamepad Background"
+        className="absolute bottom-20 right-[-15%] max-lg:hidden"
       />
-
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center gap-4 py-20 px-4">
-        {/* Icon */}
-        <div className="rounded-full border-4 border-black p-4 bg-white">
-          <Image src={CPIcon} alt="C.P. Logo" className="w-16 h-16" />
-        </div>
-
-        {/* Title */}
-        <h1 className="text-4xl font-bold mt-4">Competitive Programming</h1>
-
-        {/* Description */}
-        <p className="text-lg max-w-3xl">
+      <Image src={CPIcon} alt="Cp Profile" className="w-1/5 z-10" />
+      <div className="bg-white flex flex-col items-center justify-center p-8 w-3/4 lg:w-1/2 mt-[-3rem] pt-[4rem] gap-5">
+        <h1 className="font-black text-white text-center lg:text-[3.5rem] text-[1.5rem]  [text-shadow:-1px_-1px_0_#000,1px_-4px_0_#000,-1px_4px_0_#000,1px_4px_0_#000]">
+          Competitive Programming
+        </h1>
+        <p className="text-sm text-[16px]">
           Competitive Programming adalah kompetisi yang menguji kemampuan
           analisis para peserta dalam pemecahan masalah dan berpikir
-          komputasional dengan menyelesaikan persoalan-persoalan yang diberikan
-          dengan menggunakan bahasa pemrograman tertentu dan tidak melanggar
-          batasan waktu dan memori yang ditentukan. Kompetisi ini ditujukan
-          untuk Mahasiswa S1/D3/D4 se-Indonesia.
+          komputasional dengan menyelesaikan persoalan - persoalan yang
+          diberikan dengan menggunakan bahasa pemrograman tertentu dan tidak
+          melanggar batasan waktu dan memori yang ditentukan. Kompetisi ini
+          ditujukan untuk Mahasiswa S1/D3/D4 se-Indonesia.
         </p>
-
-        {/* Buttons */}
-        <div className="flex flex-row gap-4 mt-4">
-          <Button variant="outline" className="px-6 py-2">
+        <div className="flex lg:flex-row flex-col text-lg gap-5">
+          <Button
+            className="border-2 border-blue-800 text-blue-950 px-10 py-8"
+            variant={"outline"}
+          >
             Download Guidebook
           </Button>
-          <Button className="px-6 py-2 bg-blue-800 text-white hover:bg-blue-700">
+          <Button className="bg-blue-950 text-white px-10 py-8">
             Register Now
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

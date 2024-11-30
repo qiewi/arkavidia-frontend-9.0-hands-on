@@ -1,5 +1,9 @@
 import { PageHeader } from "@/components/competitive-programming/page-header";
 
 export default function Home() {
-  return ;
+  return (
+    <main>
+      <PageHeader />
+    </main>
+  );
 }
