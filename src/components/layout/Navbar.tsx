@@ -110,7 +110,7 @@ export default function Navbar() {
               href={d.link ?? "#"}
               className="relative group px-2 py-3 transition-all "
             >
-              <div className="relative group">
+              <div className="relative">
                 <div className="flex cursor-pointer items-center gap-2 text-blue-900 group-hover:border-b-2 group-hover:border-blue-900">
                   <span>{d.label}</span>
                   {d.children && (
