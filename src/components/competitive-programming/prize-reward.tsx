@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import StarryStar from '@images/starry-star.svg'
+import GameArcade from '@images/game-arcade.svg'
 import Trophy from '@images/trophy.svg'
 
 type PrizeProps = {
@@ -10,27 +11,28 @@ type PrizeProps = {
   }
   
 const prizeItems: PrizeProps[] = [
-{
-    label: "Juara 1",
-    prize: "Rp7.000.000,-"
-},
-{
-    label: "Juara 2",
-    prize: "Rp5.000.000,-"
-},
-{
-    label: "Juara 3",
-    prize: "Rp3.000.000,-"
-},
-{
-    label: "JFirst Solver on Final",
-    prize: "Rp100.000,-/soal"
-}
+    {
+        label: "Juara 1",
+        prize: "Rp7.000.000,-"
+    },
+    {
+        label: "Juara 2",
+        prize: "Rp5.000.000,-"
+    },
+    {
+        label: "Juara 3",
+        prize: "Rp3.000.000,-"
+    },
+    {
+        label: "First Solver on Final",
+        prize: "Rp100.000,-/soal"
+    }
 ]
 
 export const PrizeReward = () => {
   return (
     <section className="bg-blue-950 w-full items-center justify-center text-center py-20 flex flex-col relative">
+        {/* Images */}
         <Image 
             src={StarryStar}
             alt="StarryStar"
@@ -39,6 +41,7 @@ export const PrizeReward = () => {
         <h1 className="max-lg:text-transparent text-white font-black text-[4rem] pt-[1rem]">
             PRIZE
         </h1>
+        {/* Prize Rewards */}
         <div className="flex flex-row py-10 gap-4">
             <Image
                 width={260}
@@ -54,6 +57,11 @@ export const PrizeReward = () => {
                 ))}
             </ul>
         </div>
+        <Image 
+            src={GameArcade}
+            alt="GameArcade"
+            className="absolute z-10 right-0 bottom-[-20%] max-lg:hidden"
+        />
     </section>
   )
 }
