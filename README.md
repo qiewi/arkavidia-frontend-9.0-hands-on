@@ -1,8 +1,8 @@
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)
 ![Static Badge](https://img.shields.io/badge/Release-1.0-blue)
-![Static Badge](https://img.shields.io/badge/Copyright-Qie-cyan)
+![Static Badge](https://img.shields.io/badge/Copyright-Qie-yellow)
 
-![Header] (https://github.com/user-attachments/assets/e0a6f021-1572-4df5-bdbd-e1327e548344)
+![Repo Banner](https://github.com/user-attachments/assets/0c1eda23-4a1a-4c92-9ac4-5c609e6cb33e)
 
 # **Hands-On Front End Arkavidia**  
 _______
